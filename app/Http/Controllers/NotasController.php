@@ -47,6 +47,7 @@ class NotasController extends Controller
         }
     }
 
+    //Update
     public function update(Request $request, $id)
     {
         $nota = Nota::find($id);
@@ -79,6 +80,7 @@ class NotasController extends Controller
         }
     }
 
+    //Delete
     public function destroy($id){
         $nota = Nota::find($id);
 
