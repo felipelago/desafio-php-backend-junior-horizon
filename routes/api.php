@@ -4,5 +4,5 @@ use App\Http\Controllers\BateriaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SurfistaController;
 
-Route::post('/surfistas', [SurfistaController::class, 'store']);
+Route::resource('surfistas', SurfistaController::class);
 Route::resource('baterias', BateriaController::class);
